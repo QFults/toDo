@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDo List</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <nav>
+        <!-- Navigation Bar -->
+        <div class="nav-wrapper">
+          <span class="brand-logo center">ToDo List App</span>
+        </div>
+      </nav>
+    </div>
+    <div id="signInInstructions" class="row">
+      <!-- Instructions on Sign In -->
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Welcome to the ToDo List App!</span>
+          <p>Sign in to get started creating your ToDo Lists and ToDo List items!</p>
+        </div>
+        <div class="card-action">
+          <button id="openSignInModal" class="btn waves-effect waves-light" type="submit" name="action">Sign In
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="profile" class="row">
+      <!-- Instructions on Sign In -->
+      <div class="card white darken-1">
+        <div id="profileInfo" class="card-content black-text">
+        </div>
+      </div>
+    </div>
+    <div id="toDoList" class="row">
+      <!-- Instructions on Sign In -->
+      <div class="card white darken-1">
+        <div class="card-content black-text">
+          <span class="card-title">My ToDo List</span>
+          <form>
+            <div class="input-field">
+              <input id="newListItem" type="text" class="validate">
+              <label for="newListItem">New Item</label>
+            </div>
+            <button id="addItem">Add Item</button>
+          </form>
+          <div id="toDoListItems" class="collection"></div>
+          <a id="clearList" class="waves-effect red waves-light btn">Clear List</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sign In Form Modal -->
+  <div id="signInModal" class="modal">
+    <form>
+      <div class="modal-content">
+        <div class="input-field">
+          <input id="uName" type="text" class="validate">
+          <label for="uName">Name</label>
+        </div>
+        <div class="input-field">
+          <input id="uPhone" type="tel" class="validate">
+          <label for="uPhone">Phone Number</label>
+        </div>
+        <div class="input-field">
+          <input id="uEmail" type="email" class="validate">
+          <label for="uEmail">Email</label>
+        </div>
+        <div class="input-field">
+          <input id="uPass" type="password" class="validate">
+          <label for="uPass">Password</label>
+          <span id="passMatch" class="helper-text">Passwords do not match</span>
+        </div>
+        <div class="input-field">
+          <input id="uPassVer" type="password" class="validate">
+          <label for="uPassVer">Verify Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="signIn" class="waves-effect waves-green btn-flat">Sign In</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

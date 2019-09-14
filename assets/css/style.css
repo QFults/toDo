@@ -1,0 +1,16 @@
+#passMatch {
+  display: none;
+  color: red;
+}
+#profile {
+  display: none;
+}
+#toDoList {
+  display: none;
+}
+#addItem {
+  display: none; 
+}
+#clearList {
+  display: none;
+}
